@@ -51,3 +51,17 @@ function tabMenu(e){
     $this.next('ul').show().parent('li').addClass('active').siblings('li').removeClass('active').find('>ul').hide();
 }
 $tab_list.find('ul>li>a').click(tabMenu).focus(tabMenu);
+
+
+// :::::: layer popup ::::: //
+$('.layer').click(function(e){
+    e.preventDefault();
+    // $('#layer').css('display','block');
+    // $('#layer').show();
+    // $('#layer').fadeIn();
+    $('#layer').slideDown();
+})
+$('.close').click(function(e){
+    e.preventDefault();
+    $("#layer").slideUp();
+})
