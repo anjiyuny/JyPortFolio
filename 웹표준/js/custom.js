@@ -23,7 +23,22 @@ $('.ban').slick({
 // ::::: 갤러리 ::::: //
 $('.gallery_img').slick({
     arrows  :false,
+    autoplay:true,
+    autoplaySpeed:3000,
+    fade:true
 });
+$('.play').click(function(){
+    $('.gallery_img').slick('slickPlay');
+})
+$('.pause').click(function(){
+    $('.gallery_img').slick('slickPause');
+})
+$('.prev').click(function(){
+    $('.gallery_img').slick('slickPrev');
+})
+$('.next').click(function(){
+    $('.gallery_img').slick('slickNext');
+})
 
 //:::: tab menu ::::: //
 var $tab_list = $('.tab_menu');
