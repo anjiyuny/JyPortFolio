@@ -73,3 +73,9 @@ $('.window').click(function(e){
     // 옵션: left, top, width, height, status, toolbar, location, menubar, scrollbar, fullscreen,
     window.open('sample_popup','popup01','width=800, height=590, left=50, top=50, scrollbars=0, toolbar=0, menubar=0    ')
 })
+
+// light box
+$('.lightgallery').lightGallery;
+// lightGallery(document.querySelector('.lightgallery'), {
+//     thumbnail: true,
+// });
